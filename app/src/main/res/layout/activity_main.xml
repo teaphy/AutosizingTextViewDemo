@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tea.autosizingtextviewdemo.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:hint="Please input some thing"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editContent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDefaultXml"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:lines="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustom"
+        app:autoSizeTextType="uniform"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDefaultCode"
+        android:layout_width="96dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toEndOf="@+id/tvDefaultXml"
+        app:layout_constraintTop_toTopOf="@+id/tvDefaultXml" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCustom"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvGranXML"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:lines="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDefaultXml" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvGranCode"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tvDefaultCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvDefaultCode" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPresetXML"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:lines="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:autoSizeTextType="uniform"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGranXML" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPresetCode"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tvGranCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvGranCode" />
+</android.support.constraint.ConstraintLayout>
