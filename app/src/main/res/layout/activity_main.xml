@@ -33,10 +33,10 @@
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDefaultXml"
         android:layout_width="96dp"
-        android:layout_height="20dp"
-        android:lines="1"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:background="@color/colorFFC1C1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCustom"
         app:autoSizeTextType="uniform"/>
@@ -44,8 +44,9 @@
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDefaultCode"
         android:layout_width="96dp"
-        android:layout_height="16dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
+        android:background="@color/colorFFC1C1"
         app:layout_constraintStart_toEndOf="@+id/tvDefaultXml"
         app:layout_constraintTop_toTopOf="@+id/tvDefaultXml" />
 
@@ -56,6 +57,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
+        android:background="@color/colorFFC1C1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -65,8 +67,8 @@
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvGranXML"
         android:layout_width="96dp"
-        android:layout_height="20dp"
-        android:lines="1"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFFC1C1"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:autoSizeTextType="uniform"
@@ -79,19 +81,20 @@
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvGranCode"
         android:layout_width="96dp"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@color/colorFFC1C1"
         app:layout_constraintStart_toStartOf="@+id/tvDefaultCode"
         app:layout_constraintTop_toBottomOf="@+id/tvDefaultCode" />
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvPresetXML"
         android:layout_width="96dp"
-        android:layout_height="20dp"
-        android:lines="1"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:autoSizeTextType="uniform"
+        android:background="@color/colorFFC1C1"
         app:autoSizePresetSizes="@array/autosize_text_sizes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvGranXML" />
@@ -100,6 +103,7 @@
         android:id="@+id/tvPresetCode"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
+        android:background="@color/colorFFC1C1"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/tvGranCode"
         app:layout_constraintTop_toBottomOf="@+id/tvGranCode" />
